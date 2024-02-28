@@ -1,0 +1,107 @@
+
+@font-face {
+    font-family: 'JacksonMn';
+    src: url('..//assets/fonts/jackson-mn.ttf') format('truetype');
+}
+
+:root {
+  --main-color: #000000;
+  --secondary-color: #ffffff;
+  --accent-color: #ff1d7c;
+  --font-color: #ffffff;
+  --secondary-font-color: #000000;
+
+  --font-family: 'Roboto', sans-serif; 
+  --font-family-title: 'JacksonMn', sans-serif;
+  --font-size-base: 16px;
+  
+  --small-spacing: 8px; 
+  --medium-spacing: 16px; 
+  --large-spacing: 24px; 
+  
+  --border-radius: 24px; /* Radio de borde */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px; 
+  margin: 0 auto
+}
+
+body {
+  font-family: var(--font-family); 
+  font-size: var(--font-size-base)px;
+  color: var(--font-color);
+  background-color: var(--main-color);
+}
+
+h1 {
+  font-family: var(--font-family-title); 
+}
+
+footer {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.icon-header-wrapper {
+  background-color: var(--accent-color);
+  padding: var(--small-spacing); 
+  height: 100%;
+  width: 84px
+}
+
+.confirm-button {
+  display: flex;
+  align-items: center;
+  gap: var(--small-spacing); 
+  text-decoration: none;
+  border: 1px solid  var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: var(--small-spacing) var(--medium-spacing); 
+  color: var(--font-color);
+}
+
+.info-section {
+  border-top: 1px dashed var(--secondary-color);
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 1080px; 
+  margin: 0 auto;
+  padding-top: var(--medium-spacing); 
+}
+
+.info h2 {
+  font-family: var(--font-family-title); 
+}
+
+.info span {
+  display: block;
+  margin-top: var(--medium-spacing);
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.disco-ball-section{
+ 
+}
+.disco-ball-rope{
+  position: relative;
+      width: 2px;
+    height: 339px;
+      margin: 0 auto;
+      border-left: 1px dashed var(--secondary-color);
+}
