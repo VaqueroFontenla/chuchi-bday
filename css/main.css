@@ -18,7 +18,8 @@
   --small-spacing: 8px; 
   --medium-spacing: 16px; 
   --large-spacing: 24px; 
-  
+  --xlarge-spacing: 48px; 
+
   --border-radius: 24px; /* Radio de borde */
 }
 
@@ -50,6 +51,9 @@ h1 {
 footer {
   font-style: italic;
   font-size: 0.75rem;
+  text-align: center;
+   border-top: 1px dashed var(--secondary-color);
+     padding: var(--medium-spacing); 
 }
 
 .icon-header-wrapper {
@@ -71,6 +75,7 @@ footer {
 }
 
 .info-section {
+  position: relative;
   border-top: 1px dashed var(--secondary-color);
 }
 
@@ -95,13 +100,99 @@ footer {
   font-weight: bold;
 }
 
-.disco-ball-section{
- 
+.disco-ball-container{
+
 }
+
+.disco-ball{
+ width: 700px;
+ height: 500px;
+ margin: 0 auto;
+ overflow: hidden;
+ display: grid;
+}
+
+.disco-ball video{
+ width: 500px;
+margin: 0 auto;
+}
+
 .disco-ball-rope{
-  position: relative;
+  position: absolute;
+  left:50%;
+  top: 0;
       width: 2px;
-    height: 339px;
+    height: 212px;
       margin: 0 auto;
       border-left: 1px dashed var(--secondary-color);
+}
+
+.gallery-container {
+  max-width: 1080px; 
+  padding: var(--medium-spacing) 0; 
+  margin: 0 auto;
+    overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  gap:var(--large-spacing); 
+width: 4732px;
+animation: slide 10s ease infinite;
+}
+
+@keyframes slide {
+  15% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  45% {margin-left: -1456px;}
+  60% {margin-left: -2184px;}
+  75%{margin-left: -2912px;}
+  90%{margin-left: -3640px;}
+
+}
+
+
+.slide {
+  float: left;
+  display: inline-block;
+  width: 315px;
+  height: 315px;
+  border: 1px solid var(--secondary-color);
+}
+
+.statement-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 500px;
+    max-width: 1080px; 
+   padding: var(--medium-spacing) 0; 
+   margin: 0 auto;
+}
+
+.statement {
+  padding: var(--medium-spacing); 
+  background-color: var(--secondary-color);
+}
+
+.statement-info {
+  width: 50%;
+  font-family: var(--font-family-title); 
+  font-size: 48px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.see-us-container{
+  display: grid;
+  row-gap:var(--medium-spacing); 
+  justify-items: center;
+ padding: var(--xlarge-spacing); 
+
+}
+
+.see-us-container > span {
+   font-family: var(--font-family-title); 
+  font-size: 48px;
+
 }
