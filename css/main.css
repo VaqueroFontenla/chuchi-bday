@@ -35,7 +35,8 @@
   justify-content: space-between;
   align-items: center;
   max-width: var(--max-width-container); 
-  margin: 0 auto
+  margin: 0 auto;
+  padding-right: var(--medium-spacing);
 }
 
 body {
@@ -89,9 +90,9 @@ footer {
 
 
 .info {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
+display: grid;
+row-gap: var(--xlarge-spacing);
+text-align: center;
   max-width: var(--max-width-container); 
   margin: 0 auto;
   padding-top: var(--medium-spacing); 
@@ -109,19 +110,19 @@ footer {
 }
 
 .disco-ball-container{
-
+margin-top: var(--xlarge-spacing);
 }
 
 .disco-ball{
- width: 700px;
- height: 500px;
+ width: 300px;
+ height: 300px;
  margin: 0 auto;
  overflow: hidden;
  display: grid;
 }
 
 .disco-ball video{
- width: 500px;
+ width: 300px;
 margin: 0 auto;
 }
 
@@ -130,7 +131,7 @@ margin: 0 auto;
   left:50%;
   top: 0;
       width: 2px;
-    height: 212px;
+    height: 100px;
       margin: 0 auto;
       border-left: 1px dashed var(--secondary-color);
 }
@@ -221,4 +222,30 @@ animation: slide 10s ease infinite;
   max-width: var(--max-width-container);
   margin: 0 auto;
 
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    padding: 0;
+  }
+  .disco-ball{
+ width: 700px;
+ height: 500px;
+
+}
+.disco-ball video{
+ width: 500px;
+
+}
+
+.disco-ball-rope{
+
+    height: 212px;
+    
+}
+.info{
+    display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 }
