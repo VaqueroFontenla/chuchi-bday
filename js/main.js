@@ -5,7 +5,7 @@ const getCarouselImages = async () => {
     .map(
       (key) => `
             <li class="slide">
-              <img src=${`/assets/images/ester_${key}.webp`} alt=${`Ester image ${key}`} width=100% height=auto/>
+              <img src=${`./assets/images/ester_${key}.webp`} alt=${`Ester image ${key}`} width=100% height=auto/>
             </li>
           `
     )
