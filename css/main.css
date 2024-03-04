@@ -48,6 +48,8 @@ body {
 
 h1 {
 	font-family: var(--font-family-title);
+  font-size: 36px;
+  line-height: 42px;
 }
 
 footer {
@@ -227,7 +229,8 @@ footer {
 
 .see-us-container>span {
 	font-family: var(--font-family-title);
-	font-size: 48px;
+	font-size: 36px;
+  text-align: center;
 	max-width: var(--max-width-container);
 	margin: 0 auto;
 
