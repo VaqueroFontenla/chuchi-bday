@@ -251,9 +251,16 @@ footer {
 
 	.disco-ball-rope {
 
-		height: 212px;
+		height: 112px;
 
 	}
+
+  .info-container {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+  }
 
 	.info {
 		display: flex;
@@ -311,11 +318,10 @@ footer {
 	margin: 0 auto;
 }
 .statement {
-	padding: var(--xlarge-spacing) 0;
+	padding: var(--xlarge-spacing) 0 var(--xlarge-spacing) var(--xlarge-spacing);
 }
 
 .statement-info {
-	width: 50%;
 	font-size: 48px;
 }
 }
