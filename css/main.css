@@ -193,14 +193,7 @@ footer {
 	row-gap: var(--medium-spacing);
 	justify-items: center;
 	padding: var(--xlarge-spacing);
-}
-
-.see-us-container>span {
-	font-family: var(--font-family-title);
-	font-size: 36px;
-	text-align: center;
-	max-width: var(--max-width-container);
-	margin: 0 auto;
+	text-align: center;	
 }
 
 @media only screen and (min-width: 600px) {
