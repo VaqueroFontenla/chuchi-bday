@@ -80,7 +80,7 @@ footer {
 .event-presentation-section {
 	max-width: var(--max-width-container);
 	text-align: center;
-	padding: var(--xlarge-spacing);
+	padding: var(--xlarge-spacing) 0;
 	margin: 0 auto;
 }
 
