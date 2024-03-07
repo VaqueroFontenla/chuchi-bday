@@ -1,7 +1,14 @@
 @font-face {
 	font-family: 'JacksonMn';
-	src: url('..//assets/fonts/jackson-mn.ttf') format('truetype');
+	src: url('../assets/fonts/jackson-mn.ttf') format('truetype');
+	display:swap; 
 }
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+}
+
 
 :root {
 	--main-color: #000000;
