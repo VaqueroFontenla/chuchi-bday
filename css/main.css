@@ -219,8 +219,19 @@ footer {
 	display: grid;
 	row-gap: var(--medium-spacing);
 	justify-items: center;
-	padding: var(--xlarge-spacing);
+	padding: var(--xlarge-spacing) 0;
 	text-align: center;	
+	margin: 0 auto;
+}
+
+.see-us-container > div {
+	display: grid;
+	row-gap: var(--xlarge-spacing);
+	margin-bottom: var(--xlarge-spacing);
+}
+
+.see-us-container > div > h1 {
+	padding: var(--medium-spacing);
 }
 
 @media only screen and (min-width: 600px) {
@@ -306,5 +317,22 @@ footer {
 
 	.statement-info {
 		font-size: 48px;
+	}
+
+	.see-us-container {
+		display: grid;
+		row-gap: var(--medium-spacing);
+		justify-items: center;
+		padding: var(--xlarge-spacing) 0 var(--xlarge-spacing) var(--xlarge-spacing);
+		text-align: center;	
+		max-width: var(--max-width-container);
+		margin: 0 auto;
+	}
+
+	.see-us-container > div {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		align-items: center;
+		column-gap: var(--xlarge-spacing);
 	}
 }
