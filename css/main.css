@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'JacksonMn';
 	src: url('../assets/fonts/jackson-mn.ttf') format('truetype');
-	display:swap; 
+	display: swap; 
 }
 
 @font-face {
@@ -164,30 +164,31 @@ footer {
 	border: 1px solid var(--secondary-color);
 }
 
+
 @keyframes slide {
-	15% {
-		margin-left: 0px;
-	}
+    15% {
+        margin-left: 0; /* Comienza desde la posición inicial */
+    }
 
-	30% {
-		margin-left: -394.8px;
-	}
+    30% {
+        margin-left: -460px; 
+    }
 
-	45% {
-		margin-left: -789.5px;
-	}
+    45% {
+        margin-left: -920px; 
+    }
 
-	60% {
-		margin-left: -1184.4px;
-	}
+    60% {
+        margin-left: -1380px; 
+    }
 
-	75% {
-		margin-left: -1579.2px;
-	}
+    75% {
+        margin-left: -1840px;
+    }
 
-	90% {
-		margin-left: -1974px;
-	}
+    90% {
+        margin-left: -2300px; 
+    }
 
 }
 
